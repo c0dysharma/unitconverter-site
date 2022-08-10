@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header">
+      <h1 id="heading">Metric/Imperial Unit Conversion</h1>
+      <input type="text" id="header-input" onkeypress="resizeInput()" value="20"/>
+      <button id="header-btn">Convert</button>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <!-- Footer Length Section -->
+      <div class="footer-length-div footer-metric-div">
+        <h4 class="footer-type-heading">Length (Meter/Feet)</h4>
+<div class="footer-display-div" id="footer-display-length"></div>
+      </div>
+
+      <!-- Footer Volume Section  -->
+      <div class="footer-volume-div footer-metric-div">
+        <h4 class="footer-type-heading">Volume (Liters/Gallons)</h4>
+<div class="footer-display-div" id="footer-display-volume"></div>
+      </div>
+
+      <!-- Footer Mass Section -->
+      <div class="footer-mass-div footer-metric-div">
+        <h4 class="footer-type-heading">Mass (Kilograms/Pounds)</h4>
+<div class="footer-display-div" id="footer-display-mass"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
